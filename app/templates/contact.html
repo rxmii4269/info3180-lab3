@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+
+{%block js%}
+{%endblock%}
+
+{%block main%}
+
+<h1>Contact Form</h1>
+<hr>
+<p>Fill in this form to contact the site owners.</p>
+
+<form action="{{url_for('contact')}}" method="post">
+    {{form.csrf_token}}
+
+    <div class="fom-group">
+        {{form.name.label}}<span> (Required)</span>
+        <p>Please enter your full name.</p>
+        {{form.name}}
+    </div>
+    <div class="fom-group">
+        {{form.email.label}} <span> (Required)</span>
+        <p>Please enter your e-mail address.</p>
+        {{form.email}}
+    </div>
+    <div class="fom-group">
+        {{form.subject.label}} <span> (Required)</span>
+        <p>Please enter the subject for your message.</p>
+        {{form.subject}}
+    </div>
+    <div class="fom-group">
+        {{form.message.label}} <span> (Required)</span>
+        <p>Please enter the message you would like to send.</p>
+        {{form.message}}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{%endblock%}

@@ -1,3 +1,43 @@
 body {
     padding-top: 5rem;
 }
+
+label{
+    font-weight: bold;
+    font-size: small;
+}
+span{
+    color: red;
+    font-weight: bold;
+    font-size: small;
+}
+
+hr{
+    border: lightgrey 1px solid;
+    border-radius: 5px;
+}
+
+p{
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+input{
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+    height: 2em;
+    margin-bottom: 10px;
+}
+
+#message{
+    height: 100px;
+    width: 400px;
+    border-radius: 5px;
+    resize: none;
+    border: solid 1px lightgrey;
+    margin-bottom: 30px;
+}
